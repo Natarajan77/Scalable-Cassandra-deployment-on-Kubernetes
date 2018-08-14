@@ -2,4 +2,4 @@ FROM cassandra:3.0
 
 COPY initial-seed.cql /
 ENTRYPOINT ["/docker-entrypoint.sh"]
-CMD [ "/run.sh", "|", "tee", "-a", "/tmp/run.log" ]
+CMD [ "/run.sh" ]
